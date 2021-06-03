@@ -52,12 +52,12 @@ window.addEventListener("load", function () {
     let upArrow = document.querySelector(".main_1");
     upArrow.addEventListener("click", function () {
         height = document.getElementById("spaceShuttleHeight");
-        height.innerHTML = "10000";
+        height.innerHTML = parseInt(height.innerHTML) + 10000;
     });
     let downArrow = document.getElementById("down");
     downArrow.addEventListener("click", function () {
         height = document.getElementById("spaceShuttleHeight");
-        height.innerHTML = "0";
+        height.innerHTML = parseInt(height.innerHTML) - 10000;
 
     });
 });
